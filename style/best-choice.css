@@ -1,0 +1,171 @@
+
+
+.best-choice .container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.best-choice  .grid {
+  display:flex;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 40px 0 40px 0;
+}
+
+.best-choice .conteudo-best-choice {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-evenly;
+  gap:10px;
+  max-width: 350px;
+  height: 500px;
+  padding: 10px;
+}
+
+.best-choice .conteudo-best-choice h1 {
+  color: #005AA1;
+  font-weight: 700;
+}
+.best-choice .conteudo-best-choice p {
+  color: rgb(90, 90, 90);
+  font-size: 14px;
+}
+
+.best-choice .conteudo-best-choice button {
+  max-width:200px;
+}
+
+.grid .grid-dashboard {
+  width: 100%;
+  max-width:520px;
+  height: 100%;
+  position:relative;
+  padding: 10px;
+}
+
+.grid-dashboard .dashboard1 {
+  background-image: url('../img/imgdashboard2.svg');
+  background-size: cover;
+  background-position-x: center;
+  width: 300px;
+  height: 400px;
+  position:absolute;
+  left: 30px;
+  top: 40px;
+  z-index: 3;
+}
+
+.grid-dashboard .dashboard2 {
+  background-image: url('../img/imgdashboard1.svg');
+  background-size: cover;
+  background-position-x: center;
+  width: 250px;
+  height: 250px;
+  position:absolute;
+  right: 30px;
+  bottom: 0;
+  z-index: 4;
+}
+
+.grid-dashboard #circulos1 {
+  position:absolute;
+  width: 100px;
+  left: 0;
+  top: 0;
+}
+
+.grid-dashboard #circulos2 {
+  position:absolute;
+  width: 100px;
+  bottom: 200px;
+  right: 0;
+}
+
+.marcas {
+  width: 100%;
+  display: flex;
+  justify-content:center;
+}
+
+.marcas .container {
+  width: 1200px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 60px;
+  gap: 10px;
+}
+
+.marcas .container img {
+  height: 50px;
+  max-width: 150px;
+}
+
+@media only screen and (max-width: 1440px) {
+  
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .grid .grid-dashboard {
+    max-width:400px;
+    max-height: 480px;
+  }
+
+  .grid-dashboard .dashboard1 {
+    width: 220px;
+    height: 350px;
+  }
+  .grid-dashboard .dashboard2 {
+    width: 200px;
+    height: 200px;
+  }
+
+  .grid-dashboard #circulos2 {
+    top: 230px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .grid .grid-dashboard {
+    max-width: 300px;
+    max-height: 420px;
+  }
+
+  .grid-dashboard .dashboard1 {
+    width: 200px;
+    height: 300px;
+  }
+  .grid-dashboard .dashboard2 {
+    width: 150px;
+    height: 150px;
+  }
+
+  .grid-dashboard #circulos2 {
+    top: 230px;
+  }
+ 
+  .marcas .container {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .marcas .container img {
+    height: 40px;
+    max-width: 150px;
+  }
+
+  
+}
+
+@media only screen and (max-width: 425px) {
+  .best-choice .container {
+    grid-template-columns: 1fr;
+  }
+  .grid .grid-dashboard {
+    max-width: 300px;
+    height: 350px;
+  }
+  .marcas .container {
+    padding: 60px 20px;
+  }
+}

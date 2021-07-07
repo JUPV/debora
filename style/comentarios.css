@@ -1,0 +1,148 @@
+.comentarios {
+  margin-bottom: 60px;
+}
+
+.comentarios .card-comentarios {
+  
+  display: grid;
+  grid-template-columns: 60% 40%;
+  gap: 1px;
+  height: 400px;
+}
+
+.comentarios .comentarios-clientes {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  background-color: var(--cor-secondary);
+  position: relative;
+}
+
+.comentarios .comentarios-clientes p {
+  color: white;
+  font-size:35px;
+  width: 100% ;
+  max-width: 600px;
+}
+
+.comentarios .comentarios-clientes .cont {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+}
+
+.comentarios .dots {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 0 100px;
+}
+
+.dot-comete {
+  color:rgb(165, 163, 163);
+}
+
+.active-dot-comente {
+  color:var(--cor-primary);
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.comentarios .card-perfil {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.comentarios .card-perfil .box {
+  background-color: var(--cor-secondary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding: 30px;
+  height: 330px;
+}
+
+.comentarios .card-perfil .img {
+  width: 80px;
+  height: 80px;
+  border-radius:10px;
+  background-image: url('/debora/img/avatar/avata09.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.comentarios .card-perfil h1 {
+  color: white;
+  font-size:30px;
+  display:block;
+}
+
+.comentarios .card-perfil span {
+  color: white;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+.comentarios .card-perfil i img {
+  width: 40px;
+  display:block;
+}
+
+.comentarios .card-perfil .controle {
+  width: 100%;
+  height: 100%;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+}
+
+.comentarios .card-perfil .controle div {
+  background-color: var(--cor-secondary);
+  text-align: center;
+  padding: 20px;
+}
+
+.comentarios .card-perfil .controle .proximo img {
+  transform: rotate(180deg);
+}
+
+@media only screen and (max-width: 1440px) {
+  
+}
+
+@media only screen and (max-width: 1024px) {
+  .comentarios .comentarios-clientes p {
+    font-size:30px;
+    padding: 10px;
+  }
+
+  .comentarios .dots {
+    padding: 0 50px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .comentarios .dots {
+    padding: 0 15px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .comentarios .card-comentarios {
+    grid-template-columns:1fr;
+    height: 600px;
+  }
+  .comentarios .comentarios-clientes p {
+    font-size:25px;
+    padding: 50px 20px ;
+    margin-bottom: 30px;
+  }
+  .comentarios .dots {
+    padding: 0 5px;
+  }
+
+}

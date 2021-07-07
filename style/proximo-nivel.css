@@ -1,0 +1,102 @@
+
+.proximo-nivel {
+  margin-bottom: 60px;
+}
+
+.proximo-nivel .titulo {
+  display: flex;
+  background-color: #D8EEFF;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.proximo-nivel .titulo h1 {
+  color: #005AA1;
+  width: 100%;
+  max-width: 450px;
+}
+
+.proximo-nivel .titulo button {
+  width: 200px;
+  padding: 15px;
+}
+
+.proximo-nivel .card-duplo {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.proximo-nivel .card-duplo .card {
+  height: 400px ;
+  background-size: cover;
+}
+
+.proximo-nivel .card-duplo .card:nth-child(1) {
+  background-image: url('../img/Rectangle.svg');
+}
+
+.proximo-nivel .card-duplo .card:nth-child(2) {
+  background-image: url('../img/gestao.jpeg');
+}
+
+
+.proximo-nivel .card-duplo .card .back {
+  display: flex;
+  justify-content: center;
+  background-color: #000000b9;
+  height: 100%;
+}
+
+.proximo-nivel .card-duplo .card .conteudo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+.proximo-nivel .card-duplo .card .conteudo img {
+  width: 40px;
+}
+
+.proximo-nivel .card-duplo .card .conteudo h2 {
+  color: white;
+}
+
+.proximo-nivel .card-duplo .card .conteudo p {
+  color: white;
+}
+
+.proximo-nivel .card-duplo .card .conteudo a {
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.proximo-nivel .card-duplo .card .conteudo a img {
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 1440px) {
+  
+}
+
+@media only screen and (max-width: 1024px) {
+  
+}
+
+@media only screen and (max-width: 768px) {
+
+  .proximo-nivel .titulo {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .proximo-nivel .card-duplo {
+    grid-template-columns: auto;
+  }
+}

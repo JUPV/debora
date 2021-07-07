@@ -1,0 +1,121 @@
+.vantagens{
+  width: 100%;
+  padding-bottom: 70px;
+}
+
+.vantagens .containe {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+}
+
+.vantagens .card-titulo-sub {
+  display: flex;
+  align-items: center;
+}
+
+.vantagens .cards-img {
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly;
+  height: 120px;
+}
+
+.vantagens .cards-img .img1 {
+  display: flex;
+  align-items: flex-end;
+}
+
+.vantagens .cards-img .img2 {
+  margin-top: 20px;
+}
+
+.vantagens .cards-img .img3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.vantagens .titulo-sub {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 0 20px 0;
+}
+
+.vantagens .titulo-sub h1 {
+  color:var(--cor-primary) ;
+  font-size: 18px;
+}
+
+.vantagens .titulo-sub h2 {
+  color: #005AA1;
+}
+
+.vantagens .containe-card {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.vantagens .containe-card .card {
+  box-shadow: -2px 2px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  height: 100px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+/* .vantagens .hove-a,.vantagens .hove-b{
+  background-color: white;
+  transition: background-color .5s;
+}
+.vantagens .hove-a:hover {
+  background-color:#F2F7E5;
+}
+.vantagens .hove-b:hover {
+  background-color:#D8EEFF;
+} */
+
+.vantagens .containe-card .card span{
+  color: var(--cor-secondary);
+}
+
+.vantagens .back-end .titulo h2,
+.vantagens .front-end .titulo h2 {
+  color:var(--cor-primary);
+  font-size: 18px;
+  margin: 20px 0 20px 5px;
+}
+
+@media only screen and (max-width: 1440px) {
+  
+}
+
+@media only screen and (max-width: 1024px) {
+  
+}
+
+@media only screen and (max-width: 768px) {
+  .vantagens .containe-card {
+    grid-template-columns:1fr 1fr;
+  }
+  .vantagens .containe-card .card {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .vantagens .containe-card {
+    grid-template-columns:1fr;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .vantagens .cards-img {
+    display: none;
+  }
+  
+}

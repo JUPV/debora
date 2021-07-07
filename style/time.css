@@ -1,0 +1,79 @@
+
+.time {background-color: rgb(212, 212, 212); padding: 30px 0 60px 0;}
+
+.time .titulo {
+  padding: 30px;
+}
+
+.time .titulo h1 {
+  color: #005AA1;
+  margin-bottom: 10px;
+}
+
+.time .cardes-time {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  width: 100%;
+  overflow-x: auto;
+  padding: 0 20px 0 20px;
+}
+
+.time .card {
+  display: flex;
+}
+
+.time .card .perfil {
+  margin-bottom: 10px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.time .card .perfil .foto img {
+  border-radius: 10px 10px 0 0;
+  width: 160px;
+}
+
+.time .card .perfil .dados {
+  background-color: white;
+  padding: 10px;
+  border-radius: 0 0 10px 10px;
+}
+
+.time .card .perfil .dados h1 {
+  color: var(--cor-secondary);
+  font-size: 10px;
+  
+}
+
+.time .card .perfil .dados span {
+  font-size: 8px;
+  color:rgb(131, 131, 131)
+}
+
+.time .card .social {
+  width: 26px;
+  height: 60px;
+  background-color: var(--cor-primary);
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1440px) {
+  
+}
+
+@media only screen and (max-width: 1024px) {
+  
+}
+
+@media only screen and (max-width: 768px) {
+
+}
+
+@media only screen and (max-width: 425px) {
+
+}

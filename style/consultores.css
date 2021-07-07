@@ -1,0 +1,91 @@
+.consultores {
+  padding-bottom: 40px;
+}
+.consultores .card-titulo {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.consultores .card-titulo h1 {
+  color: #005AA1;
+  width: 100%;
+  max-width: 600px;
+}
+
+.consultores .card-titulo p {
+  color: #6d6d6d;
+  font-size: 20px;
+}
+
+
+.consultores .card-consultores {
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr;
+  gap:20px;
+}
+
+.consultores .sub-card {
+  box-shadow: 4px 4px 6px #00000029;
+  border-radius: 20px;
+  
+  position: relative;
+  /* margin: 20px; */
+  width: 100%;
+  max-width:600px;
+}
+
+.consultores .card {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  height: 180px;
+}
+
+.consultores .card img {
+  width: 42px;
+}
+
+.consultores .card h2 {
+  color: #6d6d6d;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.consultores .card p {
+  width: 100%;
+  max-width: 250px;
+  font-size: 14px;
+  color: #6d6d6d;
+}
+
+.consultores .hrl {
+  width: 4px;
+  height: 80px;
+  background-color: var(--cor-secondary);
+  border-radius: 9999px;
+  position:absolute;
+  right:0px;
+}
+
+@media only screen and (max-width: 1440px) {
+  
+}
+
+@media only screen and (max-width: 1024px) {
+  
+}
+
+@media only screen and (max-width: 768px) {
+  .consultores .card-consultores {
+    grid-template-columns:1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .consultores .card-consultores {
+    grid-template-columns:1fr;
+  }
+}

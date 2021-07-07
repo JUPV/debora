@@ -1,0 +1,332 @@
+
+header .nav {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+
+
+header .nav .menu {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-content: center;
+}
+
+header .nav a {
+  color:rgb(245, 245, 245);
+  font-size: 20px;
+  font-weight: normal;
+  padding: 20px 1% 0 1%;
+  margin-top: 20px;
+  transition: color 0.5s;
+}
+
+header .nav a:hover {
+  color: var(--cor-primary);
+}
+
+header .nav .logo img {
+  height: 55px;
+  margin: 30px 1% 0 1%;
+}
+
+header .nav .logo .menu-repo {
+  display:none;
+}
+
+header .nav .social-nave {
+  position: absolute;
+  right: 20px;
+  top:40px;
+}
+
+header .slide {
+  position: relative;
+}
+
+header .slide-container {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 700px;
+}
+
+header .back {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.76);
+}
+
+header .conteudo_baner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  color:white;
+  padding: 20px;
+  gap: 20px;
+  justify-content: center;
+}
+
+header .conteudo_baner h1 {
+  width: 400px;
+}
+
+header button {
+  max-width: 250px;
+}
+
+header .banner1 {background-image: url('../img/banner/banner-1.svg');}
+header .banner2 {background-image: url('../img/banner/banner-2.svg');}
+header .banner3 {background-image: url('../img/banner/banner-3.svg');}
+header .banner4 {background-image: url('../img/banner/banner-4.svg');}
+
+header .controle_slide {
+  position: absolute;
+  display: flex;
+  min-width: 250px;
+  bottom: 30px; 
+}
+
+header .arrow {
+  display: flex;
+  align-items: center;
+}
+
+header .arrow.left img {
+  transform: rotate(178deg);
+}
+
+header .dots {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.dot {
+  color:rgb(165, 163, 163);
+}
+
+.active-dot {
+  color:var(--cor-primary);
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+/* menu hambúrguer */
+
+#menuToggle{
+  display: block;
+  position: relative;
+  top: 10px;
+  left: 10px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+  display:none;
+}
+
+#menuToggle a{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover{
+  color: var(--cor-primary);
+}
+
+#menuToggle input{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; 
+  z-index: 2; 
+  
+  -webkit-touch-callout: none;
+}
+
+#menuToggle span{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #cdcdcd;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2){
+  transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  display:none;
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+@media only screen and (max-width: 1440px) {
+  header .slide-container {
+    height: 600px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  header .slide-container {
+    height: 600px;
+  }
+  header .banner1 {background-image: url('../img/banner/banner1-1024.svg');}
+  header .banner2 {background-image: url('../img/banner/banner2-1024.svg');}
+  header .banner3 {background-image: url('../img/banner/banner3-1024.svg');}
+  header .banner4 {background-image: url('../img/banner/banner4-1024.svg');}
+}
+
+@media only screen and (max-width: 899px) {
+  .social-nave {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  nav .menu-primary {
+    display: none;
+  }
+  header nav .logo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  header .nav .logo img {
+    margin:0;
+  }
+
+  header nav .logo .menu-repo {
+    display:block;
+  }
+
+  header nav .logo .menu-repo .menu-dropdown {
+    display: none;
+  }
+
+
+  header .slide-container {
+    height: 500px;
+  }
+
+
+  header .banner1 {background-image: url('../img/banner/banner1-768.svg');}
+  header .banner2 {background-image: url('../img/banner/banner2-768.svg');}
+  header .banner3 {background-image: url('../img/banner/banner3-768.svg');}
+  header .banner4 {background-image: url('../img/banner/banner4-768.svg');}
+
+  header .conteudo_baner h1 {
+    font-size:25px;
+  }
+
+  header .conteudo_baner button {
+    width: 200px;
+  }
+
+  #menu,#menuToggle {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+
+  header .conteudo_baner h1 {
+    width: 200px;
+    /* margin-left: 10%; */
+  }
+
+  header .controle_slide {
+    margin: auto;
+  }
+
+  header .conteudo_baner h1 {
+    font-size:20px;
+  }
+
+  header .conteudo_baner button {
+    width: 150px;
+  }
+
+  header .banner1 {background-image: url('../img/banner/banner1-425.svg');}
+  header .banner2 {background-image: url('../img/banner/banner2-425.svg');}
+  header .banner3 {background-image: url('../img/banner/banner3-425.svg');}
+  header .banner4 {background-image: url('../img/banner/banner4-425.svg');}
+}
+
+@media only screen and (max-width: 425px) {
+  header .banner1 {background-image: url('../img/banner/banner1-320.svg');}
+  header .banner2 {background-image: url('../img/banner/banner2-320.svg');}
+  header .banner3 {background-image: url('../img/banner/banner3-320.svg');}
+  header .banner4 {background-image: url('../img/banner/banner4-320.svg');}
+}

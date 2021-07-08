@@ -23,6 +23,7 @@
   background-size: cover;
   width: 100%;
   max-width: 400px;
+  height: 400px;
   height: 350px;
   border-radius: 20px;
   color:white;
@@ -35,7 +36,8 @@
 }
 
 .blog .card-container .card-esq .conteudo {
-  width: 250px;
+  width: 100%;
+  max-width: 250px;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -49,6 +51,7 @@
 
 .blog .card-container .card-esq .conteudo p {
   font-size: 14px;
+  padding: 20px 0;
 }
 
 .blog .card-container .card-esq .conteudo a {
@@ -123,6 +126,9 @@
   .blog .card-container {
     grid-template-columns: 1fr;
     gap: 20px;
+  }
+  .blog .card-container .card-dir .mini-card p {
+    margin: 10px 0;
   }
 }
 

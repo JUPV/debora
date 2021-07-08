@@ -111,6 +111,13 @@
   .vantagens .containe-card {
     grid-template-columns:1fr;
   }
+  .vantagens .titulo-sub {
+    gap:0;
+  }
+
+  .vantagens .titulo-sub h2 {
+    margin: 20px 0;
+  }
 }
 
 @media only screen and (max-width: 375px) {

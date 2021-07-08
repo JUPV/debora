@@ -89,3 +89,12 @@
     grid-template-columns:1fr;
   }
 }
+
+@media only screen and (max-width: 425px) {
+  .consultores .card-titulo {
+    margin-bottom: 20px;
+  }
+  .consultores .card-titulo {
+    margin:10px 0;
+  }
+}

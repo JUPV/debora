@@ -91,7 +91,10 @@
 
   .proximo-nivel .titulo {
     flex-wrap: wrap;
-    gap: 15px;
+  }
+
+  .proximo-nivel .titulo button {
+    margin-top: 20px;
   }
 }
 

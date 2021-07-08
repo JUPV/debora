@@ -1,5 +1,5 @@
 .comentarios {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 .comentarios .card-comentarios {
@@ -61,7 +61,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 10px;
+  justify-content: space-evenly;
   padding: 30px;
   height: 330px;
 }
@@ -134,7 +134,7 @@
 @media only screen and (max-width: 425px) {
   .comentarios .card-comentarios {
     grid-template-columns:1fr;
-    height: 600px;
+    height: 700px;
   }
 
   .comentarios .comentarios-clientes {

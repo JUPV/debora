@@ -34,13 +34,13 @@
 
 .comentarios .dots {
   display: flex;
-  gap: 10px;
   align-items: center;
   padding: 0 100px;
 }
 
 .dot-comete {
   color:rgb(165, 163, 163);
+  padding: 0 5px;
 }
 
 .active-dot-comente {
@@ -70,7 +70,7 @@
   width: 80px;
   height: 80px;
   border-radius:10px;
-  background-image: url('/debora/img/avatar/avata09.svg');
+  background-image: url('../img/avatar/avata09.svg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -136,6 +136,11 @@
     grid-template-columns:1fr;
     height: 600px;
   }
+
+  .comentarios .comentarios-clientes {
+    margin-bottom: 1px;
+  }
+
   .comentarios .comentarios-clientes p {
     font-size:25px;
     padding: 50px 20px ;
@@ -145,4 +150,15 @@
     padding: 0 5px;
   }
 
+  .comentarios .card-comentarios,.comentarios .card-perfil,.comentarios .card-perfil .controle {
+    gap: 0;
+  }
+
+  .comentarios .card-perfil .perfil {
+    margin-bottom: 1px;
+  }
+
+  .comentarios .card-perfil .controle .proximo {
+    margin-left: 1px;
+  }
 }

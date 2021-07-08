@@ -145,4 +145,9 @@
   .blog .card-container .card-dir .mini-card a {
     font-size: 14px;
   }
+
+  .blog .card-container .card-dir {
+    display: block;
+    padding: 0;
+  }
 }
